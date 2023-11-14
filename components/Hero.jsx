@@ -1,15 +1,23 @@
+"use client";
 import React from "react";
 import config from "@/config/index.json";
 import Image from "next/image";
 import Link from "next/link";
 import { HeartIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
 
 const Hero = () => {
-    const {mainHero} = config;
+  const { mainHero } = config;
   return (
     <>
       <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen h-fit w-screen overflow-hidden sm:px-20 lg:px-32">
-        <div className="flex flex-col pt-28 lg:pt-0  h-full gap-4 items-center lg:items-start justify-center w-full md:w-[50%] text-black dark:text-white">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="flex flex-col pt-28 lg:pt-0  h-full gap-4 items-center lg:items-start justify-center w-full md:w-[50%] text-black dark:text-white"
+        >
           <h3 className="text-xl lg:text-3xl font-extralight w-full text-center lg:text-left">
             {mainHero.title}
           </h3>
@@ -34,7 +42,7 @@ const Hero = () => {
               {mainHero.secondaryAction.text}
             </Link>
           </div>
-        </div>
+        </motion.div>
         <Image
           className="w-full lg:w-[50%] px-16 sm:px-10 lg:px-0 mt-16 lg:mt-0"
           src={mainHero.img}
