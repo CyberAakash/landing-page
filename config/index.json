@@ -26,10 +26,6 @@
       "href": "about"
     }
   ],
-  "callToAction": {
-    "text": "Get started",
-    "href": ""
-  },
   "mainHero": {
     "title": "There was a",
     "subtitle": "Landing page",
@@ -86,22 +82,22 @@
       {
         "name": "React.js",
         "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
-        "icon": "/assets/images/react.png"
+        "icon": "/1.svg"
       },
       {
         "name": "Tailwind",
         "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
-        "icon": "/assets/images/tailwindcss.svg"
+        "icon": "/2.svg"
       },
       {
         "name": "Next.js",
         "description": "Next.js is a framework for server-rendered React applications using Next.js.",
-        "icon": "/assets/images/nextjs.svg"
+        "icon": "/3.svg"
       },
       {
         "name": "Typescript",
         "description": "TypeScript is a programming language developed and maintained by Microsoft.",
-        "icon": "/assets/images/ts.png"
+        "icon": "/4.svg"
       }
     ]
   },

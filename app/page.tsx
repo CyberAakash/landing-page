@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import Difference from "@/components/Difference";
 import Phone from "@/components/Phone";
+import Features from "@/components/Features";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
         <Difference />
         <Phone />
+        <Features />
       </div>
     </>
   );

@@ -7,9 +7,10 @@ const Footer = () => {
   const { footer } = config;
   return (
     <>
-      <hr className="mt-20" />
-      <footer className="footer footer-center py-20 p-10 m-0 dark:bg-zinc-800 bg-zinc-100 dark:text-zinc-100 text-zinc-800">
-        <aside>
+      <footer className="footer footer-center pb-20 px-10 m-0 dark:bg-zinc-800 bg-zinc-100 dark:text-zinc-100 text-zinc-800 relative">
+        <div className="absolute z-0 bg-[url(/BGboxVeryLargeLight.svg)] opacity-100 dark:opacity-20 brightness-200 dark:brightness-100 bg-repeat bg-blend-lighten bg-center dark:[mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] inset-0 w-full"></div>
+        <hr className="mb-20 z-10 relative w-full" />
+        <aside className="z-10 relative">
           {/* <svg
             width="50"
             height="50"
