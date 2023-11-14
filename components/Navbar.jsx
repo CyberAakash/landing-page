@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   const checkScreenWidth = () => {
-    if (window.innerWidth >= 25) {
+    if (window.innerWidth >= 100) {
       setOpen(false);
     }
   };
@@ -83,7 +83,7 @@ const Navbar = () => {
           <Link
             href="/"
             alt=""
-            className="text-xl flex items-center justify-center gap-2 font-bold"
+            className="text-lg font-black uppercase flex items-center justify-center gap-2 "
           >
             {/* navbar.name */}
             <Image
@@ -95,7 +95,11 @@ const Navbar = () => {
             />
             {navbar.name}
           </Link>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-8">
+            <Link href="" className="hidden md:block font-thin font-sans hover:underline underline-offset-4 transition-transform delay-75 duration-200">Home</Link>
+            <Link href="" className="hidden md:block font-thin font-sans hover:underline underline-offset-4 transition-transform delay-75 duration-200">About Us</Link>
+            <Link href="" className="hidden md:block font-thin font-sans hover:underline underline-offset-4 transition-transform delay-75 duration-200">Products</Link>
+            <Link href="" className="hidden md:block font-thin font-sans hover:underline underline-offset-4 transition-transform delay-75 duration-200">Contact</Link>
             <button
               //   style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
               className={`vertical-text z-[100] sticky left-5 top-20 rounded-xl hover:scale-110 active:scale-100 duration-200 dark:text-white text-d1`}

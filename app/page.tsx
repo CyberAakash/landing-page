@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Difference from "@/components/Difference";
 import Phone from "@/components/Phone";
 import Features from "@/components/Features";
+import FAQs from "@/components/FAQs";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Difference />
         <Phone />
         <Features />
+        <FAQs />
       </div>
     </>
   );

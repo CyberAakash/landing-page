@@ -6,8 +6,8 @@ const Features = () => {
     const {features} = config;
   return (
     <>
-      <div className="grid place-items-center grid-cols-8 text-black dark:text-white gap-16">
-        <div className="col-span-8 col-start-1 flex flex-col items-center justify-center gap-4 mb-16">
+      <div className="mt-16 grid place-items-center grid-cols-8 text-black dark:text-white gap-16">
+        <div className="mb-10 col-span-8 col-start-1 flex flex-col items-center justify-center gap-4 ">
           <h2 className="w-full text-center text-xl lg:text-3xl font-extralight">
             {features.title}
           </h2>
